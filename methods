@@ -1,0 +1,41 @@
+robots.txt
+fuzz parameters
+use errors
+commnets
+
+Common sources of information disclosure
+
+
+    Files for web crawlers
+    Directory listings
+    Developer comments 
+    Error messages 
+    Debugging data 
+    User account pages 
+    Backup files 
+    Insecure configuration 
+    Version control history 
+
+
+1. file for web crawlers
+robots.txt or sitemap,xml
+
+2. error messages
+to any input enter outpute of other type or some special cahracters to cause an error
+
+3.debugging data  -> some web pages have debug pages that can be used to debug application
+/cgi-bin/phpinfo.php or directory fuxzzing can give idea
+
+4.look for idor in user account pages
+
+5.source code disclosure via bcakup files
+can be found in dirctory listing or robot.txt or sitemap.xml 
+
+
+NOTE ---> editor backup files can also be found ----------> the are sometimes appended with tilde "~"
+
+6.Information disclosure due to insecure configuration
+like use OF TRACE or OPTIONS http methods can give us idea about headers and parameter we need to append to out request
+
+7.version control
+look for .git files
